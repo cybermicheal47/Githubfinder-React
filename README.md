@@ -1,2 +1,1 @@
-# Githubfinder-React
-API 
+# githubfinder
