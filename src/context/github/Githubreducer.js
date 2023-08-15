@@ -12,20 +12,15 @@ case "SET_LOADING" :
             ...state,
             loading:true,
         }
-case "GET_USERPROFILE" :
+case "GET_USERPROFILE_AND_REPOS" :
     return {
         ...state,
-        userprofile: action.payload,
+        userprofile: action.payload.user,
+        repos : action.payload.repos,
         loading: false
     }
 
-case "GET_REPOS" :
-    return {
-        ...state,
-        repos : action.payload,
-        loading: false
 
-    }
 
 
 
